@@ -158,17 +158,38 @@ export default function SalzburgPage() {
                <GoogleReviews />
            </section>
 
+           <section className="py-20 text-center bg-gray-50 rounded-2xl">
+            <h2 className="text-4xl font-bold mb-16">Deine Expertinnen</h2>
+            <div className="flex flex-wrap justify-center gap-12">
+              <div className="text-center group">
+                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Mag.-Nicole-Nemeth-Sachkundenachweis.webp" alt="Tierärztin Mag. Nicole Nemeth für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
+                <h3 className="mt-6 text-2xl font-bold">Mag. Nicole Nemeth</h3>
+                <p className="text-[--highlight] font-semibold">Tierärztin</p>
+              </div>
+               <div className="text-center group">
+                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Jessy-Pusch-Hundeschule-Willenskraft-Sachkundenachweis.webp" alt="Hundetrainerin Jessy Pusch für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
+                <h3 className="mt-6 text-2xl font-bold">Jessy Pusch</h3>
+                <p className="text-[--highlight] font-semibold">Hundetrainerin</p>
+              </div>
+              <div className="text-center group">
+                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Bianca-Oriana-Willen-Sachkundenachweis.webp" alt="Hundetrainerin Bianca Oriana Willen für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
+                <h3 className="mt-6 text-2xl font-bold">Bianca Oriana Willen</h3>
+                <p className="text-[--highlight] font-semibold">Hundetrainerin</p>
+              </div>
+            </div>
+          </section>
+
             <section className="py-20 bg-gray-50 rounded-2xl">
       <div className="text-center">
         <img src="https://www.willenskraft.co.at/wp-content/uploads/2018/06/Final.-Logo-Hundeschule-Willenskraft.-Gute-Hundeschule-Graz-Gleisdorf.png" alt="Logo Hundeschule Willenskraft" className="w-48 mx-auto mb-8" />
-        <h2 className="text-4xl font-bold mb-4">Veranstalter: Hundeschule Willenskraft</h2>
-        <p className="text-xl text-gray-600 mb-12">Dein ganzheitlicher Wegbegleiter für ein harmonisches Leben mit Hund.</p>
+        <h2 className="text-4xl font-bold mb-4 text-black">Veranstalter: Hundeschule Willenskraft</h2>
+        <p className="text-xl text-black mb-12">Dein ganzheitlicher Wegbegleiter für ein harmonisches Leben mit Hund.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="p-10">
-          <h3 className="text-3xl font-bold mb-6">Unsere Philosophie</h3>
-          <p className="mb-4 text-lg">Wir stehen für tierschutzkonformes & modernes Hundetraining. Es geht darum, deinen Hund besser verstehen zu lernen und die richtigen Signale zu senden. Wenn du lernst die Signale deines Hundes zu lesen, ermöglicht das einen Kommunikationsfluss der für beide eindeutig lesbar ist.</p>
-          <p>Missverständnisse werden aufgehoben und eine dauerhafte, auf gegenseitigem Verständnis beruhende Beziehung langfristig gefestigt.</p>
+          <h3 className="text-3xl font-bold mb-6 text-black">Unsere Philosophie</h3>
+          <p className="mb-4 text-lg text-black">Wir stehen für tierschutzkonformes & modernes Hundetraining. Es geht darum, deinen Hund besser verstehen zu lernen und die richtigen Signale zu senden. Wenn du lernst die Signale deines Hundes zu lesen, ermöglicht das einen Kommunikationsfluss der für beide eindeutig lesbar ist.</p>
+          <p className="text-black">Missverständnisse werden aufgehoben und eine dauerhafte, auf gegenseitigem Verständnis beruhende Beziehung langfristig gefestigt.</p>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform">✅ Mobiles Training</div>
