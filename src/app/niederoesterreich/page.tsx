@@ -60,6 +60,14 @@ const niederoesterreichData = {
       </div>
     </section>
   ),
+  podcastSection: (
+    <section className="py-20 text-center">
+      <h2 className="text-4xl font-bold mb-12">Hör dir unseren Podcast an</h2>
+      <div className="flex justify-center">
+        <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+  ),
   ablaufSection: (
     <section className="py-20">
       <div className="grid md:grid-cols-2 gap-16 items-center">

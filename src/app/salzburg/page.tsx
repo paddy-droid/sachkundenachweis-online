@@ -143,6 +143,13 @@ export default function SalzburgPage() {
                 </div>
             </section>
 
+            <section className="py-20 text-center">
+                <h2 className="text-4xl font-bold mb-12">Hör dir unseren Podcast an</h2>
+                <div className="flex justify-center">
+                    <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+
             <section className="py-20">
                 <TerminTabelle termine={termine} buchungslink="https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/" />
             </section>

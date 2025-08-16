@@ -22,6 +22,7 @@ interface BundeslandPageProps {
   gueltigkeitText: React.ReactNode;
   ctaButtonText: string;
   veranstalterSection: React.ReactNode;
+  podcastSection?: React.ReactNode;
   ablaufSection: React.ReactNode;
   termine: { datum: string; zeit: string; preis: string; }[];
   buchungslink: string;
@@ -46,6 +47,7 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
   ctaButtonText,
   veranstalterSection,
   ablaufSection,
+  podcastSection,
   termine,
   buchungslink,
 }) => {
@@ -158,6 +160,8 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
           {ablaufSection}
 
           {veranstalterSection}
+
+          {podcastSection}
           
            <section className="py-20 text-center bg-gray-50 rounded-2xl">
             <h2 className="text-4xl font-bold mb-16">Deine Expertinnen</h2>
