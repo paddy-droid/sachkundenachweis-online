@@ -55,6 +55,13 @@ const wissensSaeulen = [
     }
 ];
 
+const termine = [
+    { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "85,00 €" },
+    { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "85,00 €" },
+    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "85,00 €" },
+    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "85,00 €" },
+];
+
 export default function SalzburgPage() {
     return (
         <main className="bg-white">
@@ -137,7 +144,7 @@ export default function SalzburgPage() {
             </section>
 
             <section className="py-20">
-                <TerminTabelle />
+                <TerminTabelle termine={termine} buchungslink="https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/" />
             </section>
 
            <section className="py-20 bg-gray-50">

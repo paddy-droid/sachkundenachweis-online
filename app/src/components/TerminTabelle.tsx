@@ -1,11 +1,15 @@
-export const TerminTabelle = () => {
-    const termine = [
-        { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "85,00 €" },
-        { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "85,00 €" },
-        { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "85,00 €" },
-        { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    ];
+interface Termin {
+    datum: string;
+    zeit: string;
+    preis: string;
+}
 
+interface TerminTabelleProps {
+    termine: Termin[];
+    buchungslink: string;
+}
+
+export const TerminTabelle = ({ termine, buchungslink }: TerminTabelleProps) => {
     return (
         <div className="w-full max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -32,7 +36,7 @@ export const TerminTabelle = () => {
             </div>
              <div className="text-center mt-10">
                  <p className="text-lg mb-4">Mit deiner Buchung meldest du dich automatisch zum nächstmöglichen Termin an.</p>
-                <a href="https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/" target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <a href={buchungslink} target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                     Jetzt Termin buchen
                 </a>
             </div>
