@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { BundeslandPage } from '@/components/BundeslandPage';
+import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Niederösterreich online | Offizieller Kurs',

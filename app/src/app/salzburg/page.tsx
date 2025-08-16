@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Image from "next/image";
 import Link from 'next/link';
-import { TerminTabelle } from '@/components/TerminTabelle';
-import GoogleReviews from '@/components/GoogleReviews';
+import { TerminTabelle } from '../../components/TerminTabelle';
+import GoogleReviews from '../../components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Salzburg - Online Kurs',
