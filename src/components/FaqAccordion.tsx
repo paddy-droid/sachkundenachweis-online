@@ -43,7 +43,7 @@ export const FaqAccordion = () => {
         },
         {
             question: "Was benötige ich für die Teilnahme am Online-Kurs?",
-            answer: "Du benötigst lediglich einen Computer, ein Tablet oder ein Smartphone mit einer stabilen Internetverbindung und einem Mikrofon. Eine Kamera ist von Vorteil, aber nicht zwingend erforderlich. Der Kurs findet über Google Meet statt, du musst dafür nichts installieren."
+            answer: "Du benötigst lediglich einen Computer, ein Tablet oder ein Smartphone mit einer stabilen Internetverbindung und einem Mikrofon. Eine Kamera ist von Vorteil, aber nicht zwingend erforderlich. Der Kurs findet über Google Meet statt, du musst dafür nichts installieren. Also egal ob du aus St. Pölten, Tulln, Baden oder Wiener Neustadt kommst du kannst online teilnehmen."
         },
         {
             question: "Können auch Familienmitglieder am Online-Kurs teilnehmen?",
