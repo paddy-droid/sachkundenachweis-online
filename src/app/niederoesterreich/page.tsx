@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis NÖ online | Offizieller Kurs',
+  title: 'Sachkundenachweis NÖ | Online Kurs',
   description: 'Offizieller Sachkundenachweis für Niederösterreich gemäß NÖ Hundehaltungsgesetz. Absolviere den Kurs online und erhalte dein Zertifikat.',
   keywords: "Sachkundenachweis NÖ, Hundekurs online, Hundeführerschein Niederösterreich, Gesetzlicher Nachweis Hundehaltung NÖ",
 };
