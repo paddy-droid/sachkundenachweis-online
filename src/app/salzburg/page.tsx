@@ -5,8 +5,8 @@ import { TerminTabelle } from '../../components/TerminTabelle';
 import GoogleReviews from '../../components/GoogleReviews';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis Salzburg - Online Kurs',
-  description: 'Offizieller Sachkundenachweis für Salzburg gemäß S-LSG. Absolviere den 2-Stunden-Kurs bequem online und erhalte dein Zertifikat.',
+  title: 'Sachkundenachweis Salzburg online | Kurs für Hundebesitzer',
+  description: 'Absolviere den offiziellen Sachkundenachweis für Salzburg online. Dein Zertifikat, gesetzeskonform und flexibel von zu Hause aus.',
   keywords: "Sachkundenachweis Salzburg, Hundekurs online, Hundeführerschein Salzburg, Gesetzlicher Nachweis Hundehaltung Salzburg",
 };
 

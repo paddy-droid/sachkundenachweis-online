@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: 'Sachkundenachweis Online für NÖ & Salzburg | Offizieller Kurs',
-    template: '%s | Sachkundenachweis Online',
+    template: '%s',
   },
   description: "Offizieller Sachkundenachweis für Hundebesitzer in Österreich. Absolviere den Kurs für NÖ oder Salzburg bequem online und erhalte dein Zertifikat.",
   keywords: "Sachkundenachweis NÖ, Hundekurs online, Hundeführerschein Niederösterreich, Gesetzlicher Nachweis Hundehaltung",
