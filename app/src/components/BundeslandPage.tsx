@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { FaqAccordion } from "@/components/FaqAccordion";
-import { TerminTabelle } from "@/components/TerminTabelle";
-import HardfactsTabelle from '@/components/HardfactsTabelle';
-import GoogleReviews from '@/components/GoogleReviews';
+import { FaqAccordion } from "./FaqAccordion";
+import { TerminTabelle } from "./TerminTabelle";
+import HardfactsTabelle from './HardfactsTabelle';
+import GoogleReviews from './GoogleReviews';
 
 interface BundeslandPageProps {
   pageTitle: string;
