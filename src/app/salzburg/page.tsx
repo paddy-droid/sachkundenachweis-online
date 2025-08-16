@@ -56,10 +56,10 @@ const wissensSaeulen = [
 ];
 
 const termine = [
-    { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "85,00 €" },
+    { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "55,00 €" },
+    { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "55,00 €" },
+    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "55,00 €" },
+    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "55,00 €" },
 ];
 
 export default function SalzburgPage() {
@@ -159,22 +159,22 @@ export default function SalzburgPage() {
            </section>
 
            <section className="py-20 text-center bg-gray-50 rounded-2xl">
-            <h2 className="text-4xl font-bold mb-16">Deine Expertinnen</h2>
+            <h2 className="text-4xl font-bold mb-16 text-black">Deine Expertinnen</h2>
             <div className="flex flex-wrap justify-center gap-12">
               <div className="text-center group">
                 <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Mag.-Nicole-Nemeth-Sachkundenachweis.webp" alt="Tierärztin Mag. Nicole Nemeth für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold">Mag. Nicole Nemeth</h3>
-                <p className="text-[--highlight] font-semibold">Tierärztin</p>
+                <h3 className="mt-6 text-2xl font-bold text-black">Mag. Nicole Nemeth</h3>
+                <p className="text-black font-semibold">Tierärztin</p>
               </div>
                <div className="text-center group">
                 <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Jessy-Pusch-Hundeschule-Willenskraft-Sachkundenachweis.webp" alt="Hundetrainerin Jessy Pusch für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold">Jessy Pusch</h3>
-                <p className="text-[--highlight] font-semibold">Hundetrainerin</p>
+                <h3 className="mt-6 text-2xl font-bold text-black">Jessy Pusch</h3>
+                <p className="text-black font-semibold">Hundetrainerin</p>
               </div>
               <div className="text-center group">
                 <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Bianca-Oriana-Willen-Sachkundenachweis.webp" alt="Hundetrainerin Bianca Oriana Willen für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold">Bianca Oriana Willen</h3>
-                <p className="text-[--highlight] font-semibold">Hundetrainerin</p>
+                <h3 className="mt-6 text-2xl font-bold text-black">Bianca Oriana Willen</h3>
+                <p className="text-black font-semibold">Hundetrainerin</p>
               </div>
             </div>
           </section>
@@ -192,10 +192,10 @@ export default function SalzburgPage() {
           <p className="text-black">Missverständnisse werden aufgehoben und eine dauerhafte, auf gegenseitigem Verständnis beruhende Beziehung langfristig gefestigt.</p>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform">✅ Mobiles Training</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform">🐾 Online-Hundeschule</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform">🎓 Zert. Ausbildung</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform">❤️ Tierschutzkonform</div>
+          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">✅ Mobiles Training</div>
+          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">🐾 Online-Hundeschule</div>
+          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">🎓 Zert. Ausbildung</div>
+          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">❤️ Tierschutzkonform</div>
         </div>
       </div>
     </section>
