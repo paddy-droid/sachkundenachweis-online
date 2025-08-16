@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis Niederösterreich online | Offizieller Kurs',
+  title: 'Sachkundenachweis NÖ online | Offizieller Kurs',
   description: 'Offizieller Sachkundenachweis für Niederösterreich gemäß NÖ Hundehaltungsgesetz. Absolviere den Kurs online und erhalte dein Zertifikat.',
   keywords: "Sachkundenachweis NÖ, Hundekurs online, Hundeführerschein Niederösterreich, Gesetzlicher Nachweis Hundehaltung NÖ",
 };
@@ -34,7 +34,7 @@ const niederoesterreichData = {
   gueltigkeitTitle: "Gültigkeit in ganz Niederösterreich",
   gueltigkeitText: (
     <>
-      Unser Zertifikat wird in allen Gemeinden Niederösterreichs anerkannt. Die Regelungen können sich von Bundesland zu Bundesland unterscheiden. Während in Wien beispielsweise ein verpflichtender Hundeführerschein schon länger existiert und für alle Hunde gilt, wurde die Regelung in NÖ erst 2023 eingeführt und betrifft Neu-Hundehalter. Unser Kurs ist speziell auf das <strong>NÖ Hundehaltungsgesetz</strong> zugeschnitten und garantiert dir die Einhaltung aller lokalen Vorschriften.
+      <p>Unser Zertifikat wird in allen Gemeinden Niederösterreichs anerkannt. Die Regelungen können sich von Bundesland zu Bundesland unterscheiden. Während in Wien beispielsweise ein verpflichtender Hundeführerschein schon länger existiert und für alle Hunde gilt, wurde die Regelung in NÖ erst 2023 eingeführt und betrifft Neu-Hundehalter. Unser Kurs ist speziell auf das <strong>NÖ Hundehaltungsgesetz</strong> zugeschnitten und garantiert dir die Einhaltung aller lokalen Vorschriften.</p><br/><p>Suchst du den Sachkundenachweis für ein anderes Bundesland? Hier geht es zum <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis Salzburg</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den NÖ-Kurs anmelden",

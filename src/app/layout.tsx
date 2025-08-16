@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sachkundenachweis-online.at"),
+  icons: {
+    icon: '/favicon.svg',
+  },
   title: {
     default: 'Sachkundenachweis Online für NÖ & Salzburg | Offizieller Kurs',
     template: '%s | Sachkundenachweis Online',
