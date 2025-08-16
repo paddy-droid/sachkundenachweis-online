@@ -1,5 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from "next";
+import { InfoSection } from '../components/blocks/InfoSection';
+
+export const metadata: Metadata = {
+  title: 'Sachkundenachweis NÖ & Salzburg: Dein Online-Kurs',
+  description: 'Alle Infos zum offiziellen Sachkundenachweis für Hunde in Salzburg und Niederösterreich. Absolviere den Kurs bequem online.',
+};
 
 export default function Home() {
   return (
@@ -61,6 +68,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <InfoSection />
       
       {/* Allgemeine Infos Section */}
       <section className="py-20 bg-gray-50">
