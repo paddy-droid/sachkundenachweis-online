@@ -70,7 +70,7 @@ export default function SalzburgPage() {
                 <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Sachkundenachweis Salzburg - online 🐾</h1>
-                        <p className="text-xl text-gray-700 mb-8">
+                        <p className="text-xl text-black mb-8">
                             Dein offizieller Online-Kurs für ein starkes Team mit deinem Hund. Bequem, flexibel und gesetzeskonform gemäß § 21 Abs. 1 S.LSG.
                         </p>
                         <a href="#anmeldung" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
@@ -87,13 +87,13 @@ export default function SalzburgPage() {
             <section className="py-20 px-4">
                 <div className="container mx-auto text-center">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Die Säulen deines Wissens</h2>
-                    <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">Was dich im Detail erwartet, um perfekt auf dein Leben mit Hund vorbereitet zu sein.</p>
+                    <p className="text-xl text-black mb-12 max-w-3xl mx-auto">Was dich im Detail erwartet, um perfekt auf dein Leben mit Hund vorbereitet zu sein.</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                         {wissensSaeulen.map((saeule) => (
                             <div key={saeule.title} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                                 <div className="text-4xl mb-4">{saeule.icon}</div>
                                 <h3 className="text-2xl font-bold mb-3 text-gray-800">{saeule.title}</h3>
-                                <p className="text-gray-600">{saeule.text}</p>
+                                <p className="text-gray-800">{saeule.text}</p>
                             </div>
                         ))}
                     </div>
@@ -104,11 +104,11 @@ export default function SalzburgPage() {
             <section id="anmeldung" className="py-20 px-4 bg-gray-100">
                 <div className="container mx-auto text-center">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Deine Anmeldung bei der Gemeinde</h2>
-                     <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">Schritt für Schritt zum offiziellen Team (§ 16a S.LSG)</p>
+                     <p className="text-xl text-black mb-12 max-w-3xl mx-auto">Schritt für Schritt zum offiziellen Team (§ 16a S.LSG)</p>
                     <div className="text-left max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
                         <div>
                             <h3 className="text-2xl font-bold mb-4 text-gray-800">Folgende Angaben sind erforderlich:</h3>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700">
+                            <ul className="list-disc list-inside space-y-2 text-black">
                                 {anmeldungPunkte.map(punkt => <li key={punkt}>{punkt}</li>)}
                             </ul>
                         </div>
@@ -118,7 +118,7 @@ export default function SalzburgPage() {
                                 {dokumente.map(doc => (
                                     <div key={doc.title}>
                                         <h4 className="font-bold text-gray-800">{doc.title}</h4>
-                                        <p className="text-gray-700">{doc.text}</p>
+                                        <p className="text-black">{doc.text}</p>
                                     </div>
                                 ))}
                             </div>
@@ -135,7 +135,7 @@ export default function SalzburgPage() {
             <section className="py-20 px-4">
                 <div className="container mx-auto max-w-4xl text-center">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">So läuft dein Online-Meeting ab</h2>
-                    <div className="text-lg text-gray-700 space-y-4 text-left">
+                    <div className="text-lg text-black space-y-4 text-left">
                         <p>Dein Sachkundenachweis ist nicht nur spielend leicht zugänglich, sondern auch straff organisiert. Einmal im Monat findet unser Live-Termin statt. Nach deiner Buchung erhältst du eine E-Mail mit deinem persönlichen Google-Meet-Link.</p>
                         <p>Am Kurstag selbst öffnen wir den virtuellen Seminarraum zehn Minuten vor Beginn, damit du deine Technik testen kannst. Der Vortrag dauert 120 Minuten und beinhaltet interaktive Abschnitte sowie eine moderierte Fragerunde. Deine Teilnahmebestätigung erhältst du direkt im Anschluss per E-Mail.</p>
                         <p>Solltest du einmal doch nicht teilnehmen können, kannst du deinen Termin bis 24 Stunden vorher kostenlos auf einen der Folgemonate umbuchen.</p>
