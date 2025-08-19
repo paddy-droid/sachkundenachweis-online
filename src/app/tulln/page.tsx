@@ -1,43 +1,43 @@
 import { Metadata } from 'next';
-import { BundeslandPage } from '../../../components/BundeslandPage';
+import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis St. Pölten online | Jetzt starten',
-  description: 'Absolviere den offiziellen Sachkundenachweis für St. Pölten online. Erhalte dein Zertifikat schnell und gesetzeskonform für die Anmeldung deines Hundes.',
-  keywords: "Sachkundenachweis St. Pölten, Hundekurs online, Hundeführerschein St. Pölten, Gesetzlicher Nachweis Hundehaltung St. Pölten",
+  title: 'Sachkundenachweis Tulln online | Jetzt starten',
+  description: 'Absolviere den offiziellen Sachkundenachweis für Tulln online. Erhalte dein Zertifikat schnell und gesetzeskonform für die Anmeldung deines Hundes.',
+  keywords: "Sachkundenachweis Tulln, Hundekurs online, Hundeführerschein Tulln, Gesetzlicher Nachweis Hundehaltung Tulln",
 };
 
-const stPoeltenData = {
-  pageTitle: "Sachkundenachweis St. Pölten",
-  heroTitle: "Sachkundenachweis St. Pölten – online",
-  heroSubtitle: "Gesetzeskonform, anerkannt in St. Pölten und stressfrei von zu Hause aus.",
+const tullnData = {
+  pageTitle: "Sachkundenachweis Tulln",
+  heroTitle: "Sachkundenachweis Tulln – online",
+  heroSubtitle: "Gesetzeskonform, anerkannt in Tulln und stressfrei von zu Hause aus.",
   heroImage: "/hero/hero-image.webp",
-  gesetzlicheGrundlageTitle: "Warum der Sachkundenachweis in St. Pölten so wichtig ist",
+  gesetzlicheGrundlageTitle: "Warum der Sachkundenachweis in Tulln so wichtig ist",
   gesetzlicheGrundlageText: (
     <>
-      <h3 className="text-2xl font-bold text-[--highlight]">Der Hundeführerschein in St. Pölten: Ein Muss für neue Hundehalter</h3>
+      <h3 className="text-2xl font-bold text-[--highlight]">Der Hundeführerschein in Tulln: Ein Muss für neue Hundehalter</h3>
       <p className="text-lg">
-        Mit der Einführung des neuen NÖ Hundehaltungsgesetzes am 1. Juni 2023 wurde für alle, die sich einen neuen Hund zulegen, der <strong>NÖ Hundeführerschein</strong> zur Pflicht. Wenn du in St. Pölten wohnst, ist dieser Kurs die Grundlage für die offizielle Anmeldung deines Hundes bei der Gemeinde. Die Nichtbeachtung dieser Vorschrift kann zu Strafen führen.
+        Für alle, die in der Gartenstadt Tulln einen neuen Hund in ihrer Familie begrüßen, ist der <strong>NÖ Hundeführerschein</strong> seit dem 1. Juni 2023 eine gesetzliche Anforderung. Der Abschluss dieses Kurses ist entscheidend für die reibungslose Anmeldung Ihres Hundes bei der Stadtgemeinde Tulln. Die Missachtung kann zu behördlichen Strafen führen.
       </p>
       <p className="text-lg">
-        Der Sachkundenachweis ist aber nicht nur eine bürokratische Hürde. Er vermittelt dir das notwendige Wissen für ein harmonisches und sicheres Miteinander von Mensch und Tier in der Landeshauptstadt St. Pölten.
+        Der Kurs ist jedoch weit mehr als eine reine Vorschrift. Er bereitet Sie optimal auf ein sicheres und freudvolles Zusammenleben mit Ihrem neuen Begleiter in Tulln vor.
       </p>
     </>
   ),
   gesetzlicheGrundlageImage: "/hero/content-image-2.webp",
-  kursinhalteTitle: "Was erwartet dich im Hunde-Sachkundekurs für St. Pölten?",
+  kursinhalteTitle: "Was erwartet dich im Hunde-Sachkundekurs für Tulln?",
   kursinhalteSubtitle: "Ein tiefer Einblick in die zwei Säulen der Hundeexpertise.",
   vetTeilTitle: "Veterinärmedizinischer Teil (1 Stunde)",
   vetTeilText: "Eine Tierärztin vermittelt dir essenzielles Wissen rund um die Gesundheit deines Vierbeiners. Du lernst nicht nur die gesetzlichen Mindestanforderungen der Haltung kennen, sondern auch, wie du Anzeichen für Krankheiten frühzeitig erkennst. Ein Beispiel: Wie unterscheide ich einen harmlosen Huster von einem ernsten Atemwegsinfekt? Themen wie Ernährung, Impfschemata und routinemäßige Gesundheitschecks werden praxisnah erklärt.",
   kynoTeilTitle: "Kynologischer Teil (2 Stunden)",
   kynoTeilText: "Hier tauchst du tief in die Psyche und das Verhalten deines Hundes ein. Wir entschlüsseln die Körpersprache: Was bedeutet es wirklich, wenn dein Hund gähnt oder sich über die Schnauze leckt? Wir behandeln typische Herausforderungen und zeigen Lösungswege für unerwünschtes Verhalten auf. Ein klassisches Beispiel ist das Ziehen an der Leine – wir erklären die Ursachen und geben dir Werkzeuge für entspannte Spaziergänge an die Hand.",
-  gueltigkeitTitle: "Gültigkeit in ganz St. Pölten und Umgebung",
+  gueltigkeitTitle: "Gültigkeit in ganz Tulln und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das Zertifikat unseres Online-Kurses ist in St. Pölten sowie in jeder anderen Gemeinde in Niederösterreich gültig. Es ist wichtig zu wissen, dass die Hundegesetze in Österreich von Bundesland zu Bundesland variieren. Unser Kurs ist exakt auf die Anforderungen des <strong>NÖ Hundehaltungsgesetzes</strong> von 2023 ausgelegt und sichert dir die problemlose Anerkennung in St. Pölten zu.</p><br/><p>Benötigst du den Nachweis für ein anderes Bundesland? Wir bieten auch den <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a> an. Eine Übersicht aller Kurse in Niederösterreich findest du auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
+      <p>Mit unserem Zertifikat weisen Sie Ihre Sachkunde in Tulln und im gesamten Bundesland Niederösterreich nach. Die Hundehaltungsgesetze sind in Österreich Ländersache. Unser Online-Kurs ist präzise auf die Vorgaben des <strong>NÖ Hundehaltungsgesetzes</strong> abgestimmt, sodass Ihr Nachweis in Tulln garantiert anerkannt wird.</p><br/><p>Falls Sie den Sachkundenachweis für ein anderes Bundesland benötigen, bieten wir auch den Kurs für <a href='/salzburg' style={{textDecoration: 'underline'}}>Salzburg</a> an. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
-  ctaButtonText: "Jetzt für den Kurs in St. Pölten anmelden",
+  ctaButtonText: "Jetzt für den Kurs in Tulln anmelden",
   veranstalterSection: (
     <section className="py-20 bg-gray-50 rounded-2xl">
       <div className="text-center">
@@ -100,6 +100,6 @@ const stPoeltenData = {
   buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/"
 };
 
-export default function StPoeltenPage() {
-  return <BundeslandPage {...stPoeltenData} />;
+export default function TullnPage() {
+  return <BundeslandPage {...tullnData} />;
 }

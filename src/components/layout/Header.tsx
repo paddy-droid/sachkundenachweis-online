@@ -31,11 +31,11 @@ export const Header = () => {
             {isNoMenuOpen && (
               <div className="absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                 <Link href="/niederoesterreich" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">NÖ Übersicht</Link>
-                <Link href="/niederoesterreich/st-poelten" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">St. Pölten</Link>
-                <Link href="/niederoesterreich/tulln" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tulln</Link>
-                <Link href="/niederoesterreich/baden" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Baden</Link>
-                <Link href="/niederoesterreich/wiener-neustadt" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Wiener Neustadt</Link>
-                <Link href="/niederoesterreich/moedling" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Mödling</Link>
+                <Link href="/st-poelten" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">St. Pölten</Link>
+                <Link href="/tulln" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tulln</Link>
+                <Link href="/baden" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Baden</Link>
+                <Link href="/wiener-neustadt" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Wiener Neustadt</Link>
+                <Link href="/moedling" onClick={() => setIsNoMenuOpen(false)} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Mödling</Link>
               </div>
             )}
           </div>

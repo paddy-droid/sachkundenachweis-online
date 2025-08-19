@@ -1,43 +1,43 @@
 import { Metadata } from 'next';
-import { BundeslandPage } from '../../../components/BundeslandPage';
+import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis Baden online | Jetzt starten',
-  description: 'Absolviere den offiziellen Sachkundenachweis für Baden online. Erhalte dein Zertifikat schnell und gesetzeskonform für die Anmeldung deines Hundes.',
-  keywords: "Sachkundenachweis Baden, Hundekurs online, Hundeführerschein Baden, Gesetzlicher Nachweis Hundehaltung Baden",
+  title: 'Sachkundenachweis Wiener Neustadt online | Jetzt starten',
+  description: 'Absolviere den offiziellen Sachkundenachweis für Wiener Neustadt online. Erhalte dein Zertifikat schnell und gesetzeskonform für die Anmeldung deines Hundes.',
+  keywords: "Sachkundenachweis Wiener Neustadt, Hundekurs online, Hundeführerschein Wiener Neustadt, Gesetzlicher Nachweis Hundehaltung Wiener Neustadt",
 };
 
-const badenData = {
-  pageTitle: "Sachkundenachweis Baden",
-  heroTitle: "Sachkundenachweis Baden – online",
-  heroSubtitle: "Gesetzeskonform, anerkannt in Baden und stressfrei von zu Hause aus.",
+const wienerNeustadtData = {
+  pageTitle: "Sachkundenachweis Wiener Neustadt",
+  heroTitle: "Sachkundenachweis Wiener Neustadt – online",
+  heroSubtitle: "Gesetzeskonform, anerkannt in Wiener Neustadt und stressfrei von zu Hause aus.",
   heroImage: "/hero/hero-image.webp",
-  gesetzlicheGrundlageTitle: "Warum der Sachkundenachweis in Baden so wichtig ist",
+  gesetzlicheGrundlageTitle: "Warum der Sachkundenachweis in Wiener Neustadt so wichtig ist",
   gesetzlicheGrundlageText: (
     <>
-      <h3 className="text-2xl font-bold text-[--highlight]">Gesetzliche Vorschrift in Baden: Der Sachkundenachweis</h3>
+      <h3 className="text-2xl font-bold text-[--highlight]">Ihre Verpflichtung in Wiener Neustadt: Der Sachkundenachweis für Hunde</h3>
       <p className="text-lg">
-        In der Kaiserstadt Baden bei Wien ist der <strong>Sachkundenachweis für Hundehalter</strong> seit dem Inkrafttreten des NÖ Hundehaltungsgesetzes am 1. Juni 2023 für alle neuen Hundebesitzer verpflichtend. Dieser Kurs ist die Voraussetzung für die Anmeldung Ihres Hundes bei der Gemeinde Baden und dient der Förderung eines sicheren Miteinanders.
+        Für zukünftige Hundehalter in Wiener Neustadt ist der <strong>NÖ Hundeführerschein</strong> seit dem 1. Juni 2023 unerlässlich. Diese gesetzliche Vorgabe sichert nicht nur Ihre offizielle Hundeanmeldung im Magistrat, sondern legt auch den Grundstein für ein verantwortungsbewusstes Miteinander in der Stadt.
       </p>
       <p className="text-lg">
-        Der Kurs geht über eine reine Formalie hinaus und stärkt Ihre Kompetenz im Umgang mit Ihrem Hund, was zu einem entspannteren Alltag in Baden führt.
+        Betrachten Sie den Kurs als wertvolle Investition in die Beziehung zu Ihrem Hund und als Beitrag für eine positive Gemeinschaft von Hundehaltern in Wiener Neustadt.
       </p>
     </>
   ),
   gesetzlicheGrundlageImage: "/hero/content-image-2.webp",
-  kursinhalteTitle: "Was erwartet dich im Hunde-Sachkundekurs für Baden?",
+  kursinhalteTitle: "Was erwartet dich im Hunde-Sachkundekurs für Wiener Neustadt?",
   kursinhalteSubtitle: "Ein tiefer Einblick in die zwei Säulen der Hundeexpertise.",
   vetTeilTitle: "Veterinärmedizinischer Teil (1 Stunde)",
   vetTeilText: "Eine Tierärztin vermittelt dir essenzielles Wissen rund um die Gesundheit deines Vierbeiners. Du lernst nicht nur die gesetzlichen Mindestanforderungen der Haltung kennen, sondern auch, wie du Anzeichen für Krankheiten frühzeitig erkennst. Ein Beispiel: Wie unterscheide ich einen harmlosen Huster von einem ernsten Atemwegsinfekt? Themen wie Ernährung, Impfschemata und routinemäßige Gesundheitschecks werden praxisnah erklärt.",
   kynoTeilTitle: "Kynologischer Teil (2 Stunden)",
-  kynoTeilText: "Hier tauchst du tief in die Psyche und das Verhalten deines Hundes ein. Wir entschlüsseln die Körpersprache: Was bedeutet es wirklich, wenn dein Hund gähnt oder sich über die Schnauze leckt? Wir behandeln typische Herausforderungen und zeigen Lösungswege für unerwünschtes Verhalten auf. Ein klassisches Beispiel ist das Ziehen an der Leine – wir erklären die Ursachen und geben dir Werkzeuge für entspannte Spaziergänge an die Hand.",
-  gueltigkeitTitle: "Gültigkeit in ganz Baden und Umgebung",
+  kynoTeilText: "Hier tauchst du tief in die Psyche und das Verhalten deines Hundes ein. Wir entschlüsseln die Körpersprache: Was bedeutet es wirklich, wenn dein Hund gähnt oder sich über die Schnauze leckt? Wir behandeln typische Herausforderungen und zeigen Lungswege für unerwünschtes Verhalten auf. Ein klassisches Beispiel ist das Ziehen an der Leine – wir erklären die Ursachen und geben dir Werkzeuge für entspannte Spaziergänge an die Hand.",
+  gueltigkeitTitle: "Gültigkeit in ganz Wiener Neustadt und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das von uns ausgestellte Zertifikat genießt volle Anerkennung in Baden und allen weiteren Gemeinden des Bundeslandes Niederösterreich. Die gesetzlichen Bestimmungen zur Hundehaltung sind in Österreich föderalistisch geregelt. Unser Online-Kurs ist jedoch exakt auf das <strong>NÖ Hundehaltungsgesetz</strong> abgestimmt, womit Sie in Baden auf der sicheren Seite sind.</p><br/><p>Für den Fall, dass Sie den Nachweis für ein anderes Bundesland benötigen, finden Sie hier unseren Kurs zum <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
+      <p>Unser Online-Zertifikat ist in Wiener Neustadt und in ganz Niederösterreich gültig. Da das Hundewesen in Österreich auf Landesebene geregelt ist, ist es wichtig, den richtigen Kurs zu wählen. Unser Angebot ist speziell für das <strong>NÖ Hundehaltungsgesetz</strong> konzipiert, sodass Sie in Wiener Neustadt alle Anforderungen erfüllen.</p><br/><p>Sollten Sie einen Nachweis für ein anderes Bundesland benötigen, informieren Sie sich über unseren <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
-  ctaButtonText: "Jetzt für den Kurs in Baden anmelden",
+  ctaButtonText: "Jetzt für den Kurs in Wiener Neustadt anmelden",
   veranstalterSection: (
     <section className="py-20 bg-gray-50 rounded-2xl">
       <div className="text-center">
@@ -100,6 +100,6 @@ const badenData = {
   buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/"
 };
 
-export default function BadenPage() {
-  return <BundeslandPage {...badenData} />;
+export default function WienerNeustadtPage() {
+  return <BundeslandPage {...wienerNeustadtData} />;
 }
