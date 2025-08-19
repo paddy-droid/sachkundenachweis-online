@@ -1,0 +1,2 @@
+.git
+sachkundenachweis-neu
