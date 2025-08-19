@@ -15,6 +15,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://sachkundenachweis-online.at/niederoesterreich/st-poelten',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://sachkundenachweis-online.at/niederoesterreich/tulln',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://sachkundenachweis-online.at/niederoesterreich/baden',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://sachkundenachweis-online.at/niederoesterreich/wiener-neustadt',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://sachkundenachweis-online.at/niederoesterreich/moedling',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://sachkundenachweis-online.at/salzburg',
       lastModified: new Date(),
       changeFrequency: 'monthly',
