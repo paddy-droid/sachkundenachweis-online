@@ -9,6 +9,7 @@ export const Header = () => {
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isNoMenuOpen, setIsNoMenuOpen] = useDetectOutsideClick(dropdownRef, false);
+  const [isMobileNoMenuOpen, setIsMobileNoMenuOpen] = useState(false);
 
   const ctaLink = pathname === '/salzburg'
     ? 'https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/'
@@ -55,16 +56,19 @@ export const Header = () => {
         <div className="md:hidden bg-white py-4">
           <Link href="/" className="block text-center py-2 text-gray-700 hover:bg-gray-100">Startseite</Link>
           <div className="text-center py-2">
-            <Link href="/niederoesterreich" className="text-gray-700 hover:bg-gray-100">NÖ</Link>
-            <div className="pl-4">
-              <Link href="/niederoesterreich/st-poelten" className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">St. Pölten</Link>
-              <Link href="/niederoesterreich/tulln" className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Tulln</Link>
-              <Link href="/niederoesterreich/baden" className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Baden</Link>
-              <Link href="/niederoesterreich/wiener-neustadt" className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Wiener Neustadt</Link>
-              <Link href="/niederoesterreich/moedling" className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Mödling</Link>
-            </div>
+            <button onClick={() => setIsMobileNoMenuOpen(!isMobileNoMenuOpen)} className="text-gray-700 hover:bg-gray-100 w-full text-center">NÖ</button>
+            {isMobileNoMenuOpen && (
+              <div className="pl-4">
+                <Link href="/niederoesterreich" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">NÖ Übersicht</Link>
+                <Link href="/niederoesterreich/st-poelten" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">St. Pölten</Link>
+                <Link href="/niederoesterreich/tulln" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Tulln</Link>
+                <Link href="/niederoesterreich/baden" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Baden</Link>
+                <Link href="/niederoesterreich/wiener-neustadt" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Wiener Neustadt</Link>
+                <Link href="/niederoesterreich/moedling" onClick={() => setIsMenuOpen(false)} className="block text-left py-2 text-gray-600 text-sm hover:bg-gray-100">Mödling</Link>
+              </div>
+            )}
           </div>
-          <Link href="/salzburg" className="block text-center py-2 text-gray-700 hover:bg-gray-100">Salzburg</Link>
+          <Link href="/salzburg" onClick={() => setIsMenuOpen(false)} className="block text-center py-2 text-gray-700 hover:bg-gray-100">Salzburg</Link>
           <div className="text-center mt-4">
             <a href={ctaLink} target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-5 rounded-full shadow-md">
               Jetzt Kursplatz sichern

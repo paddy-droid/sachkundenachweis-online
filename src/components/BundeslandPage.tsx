@@ -143,12 +143,14 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
           <section className="py-20">
               <div className="text-center">
                   <h2 className="text-4xl font-bold mb-4">{gueltigkeitTitle}</h2>
-                  <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                      {gueltigkeitText}
-                  </p>
-                  <a href="https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/" target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-7 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      {ctaButtonText}
-                  </a>
+                  <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <p className="text-xl text-gray-600 max-w-xl">
+                        {gueltigkeitText}
+                    </p>
+                    <a href={buchungslink} target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-7 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
+                        {ctaButtonText}
+                    </a>
+                  </div>
               </div>
           </section>
 
