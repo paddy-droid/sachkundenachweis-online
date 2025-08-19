@@ -34,7 +34,7 @@ const moedlingData = {
   gueltigkeitTitle: "Gültigkeit in ganz Mödling und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das Zertifikat, das Sie nach unserem Online-Kurs erhalten, ist in Mödling und im gesamten Bundesland Niederösterreich gültig. Die Hundegesetze sind in Österreich nicht einheitlich. Unser Kurs ist aber speziell auf die Anforderungen des <strong>NÖ Hundehaltungsgesetzes</strong> zugeschnitten, was Ihnen die Anerkennung in Mödling garantiert.</p><br/><p>Sollten Sie einen Nachweis für ein anderes Bundesland benötigen, so finden Sie hier Informationen zu unserem <a href='/salzburg' style={{textDecoration: 'underline'}}>Kurs für Salzburg</a>.</p>
+      <p>Das Zertifikat, das Sie nach unserem Online-Kurs erhalten, ist in Mödling und im gesamten Bundesland Niederösterreich gültig. Die Hundegesetze sind in Österreich nicht einheitlich. Unser Kurs ist aber speziell auf die Anforderungen des <strong>NÖ Hundehaltungsgesetzes</strong> zugeschnitten, was Ihnen die Anerkennung in Mödling garantiert.</p><br/><p>Sollten Sie einen Nachweis für ein anderes Bundesland benötigen, so finden Sie hier Informationen zu unserem <a href='/salzburg' style={{textDecoration: 'underline'}}>Kurs für Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in Mödling anmelden",

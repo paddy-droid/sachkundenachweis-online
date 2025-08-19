@@ -34,7 +34,7 @@ const badenData = {
   gueltigkeitTitle: "Gültigkeit in ganz Baden und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das von uns ausgestellte Zertifikat genießt volle Anerkennung in Baden und allen weiteren Gemeinden des Bundeslandes Niederösterreich. Die gesetzlichen Bestimmungen zur Hundehaltung sind in Österreich föderalistisch geregelt. Unser Online-Kurs ist jedoch exakt auf das <strong>NÖ Hundehaltungsgesetz</strong> abgestimmt, womit Sie in Baden auf der sicheren Seite sind.</p><br/><p>Für den Fall, dass Sie den Nachweis für ein anderes Bundesland benötigen, finden Sie hier unseren Kurs zum <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis Salzburg</a>.</p>
+      <p>Das von uns ausgestellte Zertifikat genießt volle Anerkennung in Baden und allen weiteren Gemeinden des Bundeslandes Niederösterreich. Die gesetzlichen Bestimmungen zur Hundehaltung sind in Österreich föderalistisch geregelt. Unser Online-Kurs ist jedoch exakt auf das <strong>NÖ Hundehaltungsgesetz</strong> abgestimmt, womit Sie in Baden auf der sicheren Seite sind.</p><br/><p>Für den Fall, dass Sie den Nachweis für ein anderes Bundesland benötigen, finden Sie hier unseren Kurs zum <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in Baden anmelden",

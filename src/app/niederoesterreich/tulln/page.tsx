@@ -34,7 +34,7 @@ const tullnData = {
   gueltigkeitTitle: "Gültigkeit in ganz Tulln und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Mit unserem Zertifikat weisen Sie Ihre Sachkunde in Tulln und im gesamten Bundesland Niederösterreich nach. Die Hundehaltungsgesetze sind in Österreich Ländersache. Unser Online-Kurs ist präzise auf die Vorgaben des <strong>NÖ Hundehaltungsgesetzes</strong> abgestimmt, sodass Ihr Nachweis in Tulln garantiert anerkannt wird.</p><br/><p>Falls Sie den Sachkundenachweis für ein anderes Bundesland benötigen, bieten wir auch den Kurs für <a href='/salzburg' style={{textDecoration: 'underline'}}>Salzburg</a> an.</p>
+      <p>Mit unserem Zertifikat weisen Sie Ihre Sachkunde in Tulln und im gesamten Bundesland Niederösterreich nach. Die Hundehaltungsgesetze sind in Österreich Ländersache. Unser Online-Kurs ist präzise auf die Vorgaben des <strong>NÖ Hundehaltungsgesetzes</strong> abgestimmt, sodass Ihr Nachweis in Tulln garantiert anerkannt wird.</p><br/><p>Falls Sie den Sachkundenachweis für ein anderes Bundesland benötigen, bieten wir auch den Kurs für <a href='/salzburg' style={{textDecoration: 'underline'}}>Salzburg</a> an. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in Tulln anmelden",

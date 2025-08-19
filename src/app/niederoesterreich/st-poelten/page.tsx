@@ -34,7 +34,7 @@ const stPoeltenData = {
   gueltigkeitTitle: "Gültigkeit in ganz St. Pölten und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das Zertifikat unseres Online-Kurses ist in St. Pölten sowie in jeder anderen Gemeinde in Niederösterreich gültig. Es ist wichtig zu wissen, dass die Hundegesetze in Österreich von Bundesland zu Bundesland variieren. Unser Kurs ist exakt auf die Anforderungen des <strong>NÖ Hundehaltungsgesetzes</strong> von 2023 ausgelegt und sichert dir die problemlose Anerkennung in St. Pölten zu.</p><br/><p>Benötigst du den Nachweis für ein anderes Bundesland? Wir bieten auch den <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a> an.</p>
+      <p>Das Zertifikat unseres Online-Kurses ist in St. Pölten sowie in jeder anderen Gemeinde in Niederösterreich gültig. Es ist wichtig zu wissen, dass die Hundegesetze in Österreich von Bundesland zu Bundesland variieren. Unser Kurs ist exakt auf die Anforderungen des <strong>NÖ Hundehaltungsgesetzes</strong> von 2023 ausgelegt und sichert dir die problemlose Anerkennung in St. Pölten zu.</p><br/><p>Benötigst du den Nachweis für ein anderes Bundesland? Wir bieten auch den <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a> an. Eine Übersicht aller Kurse in Niederösterreich findest du auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in St. Pölten anmelden",

@@ -70,7 +70,7 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
             <p className="text-lg md:text-2xl mb-8 text-shadow-md">
               {heroSubtitle}
             </p>
-            <a href={buchungslink} target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1">
+            <a href={buchungslink} target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 whitespace-nowrap">
               {ctaButtonText}
             </a>
           </div>

@@ -34,7 +34,7 @@ const wienerNeustadtData = {
   gueltigkeitTitle: "Gültigkeit in ganz Wiener Neustadt und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Unser Online-Zertifikat ist in Wiener Neustadt und in ganz Niederösterreich gültig. Da das Hundewesen in Österreich auf Landesebene geregelt ist, ist es wichtig, den richtigen Kurs zu wählen. Unser Angebot ist speziell für das <strong>NÖ Hundehaltungsgesetz</strong> konzipiert, sodass Sie in Wiener Neustadt alle Anforderungen erfüllen.</p><br/><p>Sollten Sie einen Nachweis für ein anderes Bundesland benötigen, informieren Sie sich über unseren <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a>.</p>
+      <p>Unser Online-Zertifikat ist in Wiener Neustadt und in ganz Niederösterreich gültig. Da das Hundewesen in Österreich auf Landesebene geregelt ist, ist es wichtig, den richtigen Kurs zu wählen. Unser Angebot ist speziell für das <strong>NÖ Hundehaltungsgesetz</strong> konzipiert, sodass Sie in Wiener Neustadt alle Anforderungen erfüllen.</p><br/><p>Sollten Sie einen Nachweis für ein anderes Bundesland benötigen, informieren Sie sich über unseren <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis für Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in Wiener Neustadt anmelden",
