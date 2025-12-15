@@ -74,30 +74,30 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10 backdrop-blur-[2px]"></div>
 
-          <div className="relative z-20 text-center p-6 max-w-5xl mx-auto animate-fade-in-up">
-            <span className="inline-block py-1 px-3 rounded-full bg-orange-500/20 border border-orange-500/50 text-orange-300 text-sm font-semibold mb-6 backdrop-blur-md uppercase tracking-wider">
+          <div className="relative z-20 text-center px-4 py-8 md:p-6 max-w-5xl mx-auto animate-fade-in-up w-full">
+            <span className="inline-block py-1 px-3 rounded-full bg-orange-500/20 border border-orange-500/50 text-xs md:text-sm font-semibold mb-6 backdrop-blur-md uppercase tracking-wider">
               Offiziell anerkannt & Zertifiziert
             </span>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-2xl">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-2xl break-words">
               {heroTitle}
             </h1>
-            <p className="text-xl md::text-2xl mb-10 text-gray-200 font-light max-w-3xl mx-auto drop-shadow-lg">
+            <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-200 font-light max-w-3xl mx-auto drop-shadow-lg px-2">
               {heroSubtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md mx-auto sm:max-w-none">
               <a
                 href={buchungslink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full text-white font-bold text-lg shadow-[0_20px_50px_rgba(249,115,22,0.3)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)] transform hover:scale-105 transition-all duration-300 ring-2 ring-orange-400/50 ring-offset-2 ring-offset-black"
+                className="w-full sm:w-auto group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full text-white font-bold text-lg shadow-[0_20px_50px_rgba(249,115,22,0.3)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.5)] transform hover:scale-105 transition-all duration-300 ring-2 ring-orange-400/50 ring-offset-2 ring-offset-black"
               >
-                <span className="relative z-10 flex items-center gap-2">
+                <span className="relative z-10 flex items-center justify-center gap-2">
                   {ctaButtonText}
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </span>
                 <div className="absolute inset-0 rounded-full bg-white/20 group-hover:bg-white/30 transition-colors blur-md"></div>
               </a>
-              <a href="#termine" className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold transition-all hover:scale-105">
+              <a href="#termine" className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold transition-all hover:scale-105">
                 Termine ansehen
               </a>
             </div>
