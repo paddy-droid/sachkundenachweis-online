@@ -1,0 +1,10 @@
+
+> app@0.1.0 build
+> next build
+
+ ÔÜá Warning: Found multiple lockfiles. Selecting C:\Users\pjauk\package-lock.json.
+   Consider removing the lockfiles at:
+   * C:\Users\pjauk\Desktop\Sachkunde NAchweis\package-lock.json
+
+   Ôû▓ Next.js 15.4.6
+

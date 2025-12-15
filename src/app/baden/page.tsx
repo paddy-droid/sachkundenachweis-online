@@ -34,7 +34,7 @@ const badenData = {
   gueltigkeitTitle: "Gültigkeit in ganz Baden und Umgebung",
   gueltigkeitText: (
     <>
-      <p>Das von uns ausgestellte Zertifikat genießt volle Anerkennung in Baden und allen weiteren Gemeinden des Bundeslandes Niederösterreich. Die gesetzlichen Bestimmungen zur Hundehaltung sind in Österreich föderalistisch geregelt. Unser Online-Kurs ist jedoch exakt auf das <strong>NÖ Hundehaltungsgesetz</strong> abgestimmt, womit Sie in Baden auf der sicheren Seite sind.</p><br/><p>Für den Fall, dass Sie den Nachweis für ein anderes Bundesland benötigen, finden Sie hier unseren Kurs zum <a href='/salzburg' style={{textDecoration: 'underline'}}>Sachkundenachweis Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{textDecoration: 'underline'}}>NÖ Übersichtsseite</a>.</p>
+      <p>Das von uns ausgestellte Zertifikat genießt volle Anerkennung in Baden und allen weiteren Gemeinden des Bundeslandes Niederösterreich. Die gesetzlichen Bestimmungen zur Hundehaltung sind in Österreich föderalistisch geregelt. Unser Online-Kurs ist jedoch exakt auf das <strong>NÖ Hundehaltungsgesetz</strong> abgestimmt, womit Sie in Baden auf der sicheren Seite sind.</p><br /><p>Für den Fall, dass Sie den Nachweis für ein anderes Bundesland benötigen, finden Sie hier unseren Kurs zum <a href='/salzburg' style={{ textDecoration: 'underline' }}>Sachkundenachweis Salzburg</a>. Eine Übersicht aller Kurse in Niederösterreich finden Sie auf unserer <a href='/niederoesterreich' style={{ textDecoration: 'underline' }}>NÖ Übersichtsseite</a>.</p>
     </>
   ),
   ctaButtonText: "Jetzt für den Kurs in Baden anmelden",
@@ -64,7 +64,7 @@ const badenData = {
     <section className="py-20 text-center">
       <h2 className="text-4xl font-bold mb-12">Hör dir unseren Podcast an</h2>
       <div className="flex justify-center">
-        <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe data-testid="embed-iframe" style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     </section>
   ),
@@ -75,8 +75,8 @@ const badenData = {
           <h2 className="text-3xl font-bold mb-6">Effizienter Ablauf, maximale Flexibilität</h2>
           <p className="mb-4 text-lg">Vergiss komplizierte Terminplanung! Unser gesamter Sachkundenachweis findet an einem einzigen Termin statt und ist in zwei logische Blöcke aufgeteilt:</p>
           <ul className="list-none space-y-4">
-            <li><strong className="text-[--highlight]">1 Stunde: Veterinärmedizinischer Teil</strong><br/>Eine erfahrene Tierärztin erklärt dir alles zu Gesundheit, gesetzlichen Mindestanforderungen, Impfungen und Ernährung.</li>
-            <li><strong className="text-[--highlight]">2 Stunden: Kynologischer Teil</strong><br/>Tauche tief in die Welt des Hundeverhaltens, der Körpersprache und der modernen Hundeerziehung ein.</li>
+            <li><strong className="text-[--highlight]">1 Stunde: Veterinärmedizinischer Teil</strong><br />Eine erfahrene Tierärztin erklärt dir alles zu Gesundheit, gesetzlichen Mindestanforderungen, Impfungen und Ernährung.</li>
+            <li><strong className="text-[--highlight]">2 Stunden: Kynologischer Teil</strong><br />Tauche tief in die Welt des Hundeverhaltens, der Körpersprache und der modernen Hundeerziehung ein.</li>
           </ul>
         </div>
         <div className="rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 order-1 md:order-2">
@@ -85,7 +85,7 @@ const badenData = {
             alt="Zwei Hunde spielen miteinander auf einer Wiese"
             width={600}
             height={400}
-            style={{objectFit: 'cover'}}
+            style={{ objectFit: 'cover' }}
           />
         </div>
       </div>
@@ -97,7 +97,27 @@ const badenData = {
     { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "85,00 €" },
     { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "85,00 €" },
   ],
-  buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/"
+  buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/",
+  faqItems: [
+    {
+      question: "Benötige ich Vorwissen für den Kurs?",
+      answer: "Nein, dieser Kurs ist speziell für Erst-Hundehalter konzipiert und vermittelt alle notwendigen Grundlagen."
+    },
+    {
+      question: "Ist das Zertifikat auch in anderen Gemeinden gültig?",
+      answer: "Ja, der NÖ Sachkundenachweis ist im gesamten Bundesland Niederösterreich gültig."
+    },
+    {
+      question: "Wie läuft die Online-Teilnahme ab?",
+      answer: "Ganz unkompliziert über Google Meet. Du erhältst rechtzeitig einen Link und kannst via PC, Tablet oder Smartphone teilnehmen."
+    }
+  ],
+  hardFacts: [
+    { label: 'Dauer', value: '3 Stunden' },
+    { label: 'Ort', value: 'Online (Google Meet)' },
+    { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
+    { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
+  ]
 };
 
 export default function BadenPage() {
