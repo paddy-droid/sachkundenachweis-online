@@ -66,9 +66,19 @@ export const CitySeoContent: React.FC<CitySeoContentProps> = ({
                         </div>
 
                         <div className="bg-orange-100 p-8 rounded-3xl border border-orange-200 text-center">
-                            <h4 className="font-bold text-orange-900 mb-2">Noch Fragen offen?</h4>
+                            <h4 className="font-bold text-orange-900 mb-4">Noch Fragen offen?</h4>
                             <p className="text-orange-700 mb-6 text-sm">Unser Experten-Team hilft dir gerne weiter.</p>
-                            <a href="mailto:info@sachkundenachweis-online.at" className="inline-block px-6 py-2 bg-white text-orange-600 font-bold rounded-lg shadow-sm hover:shadow-md transition-all">Kontakt aufnehmen</a>
+                            <div className="flex flex-col gap-3">
+                                <a href="mailto:oriana.willen@willenskraft.co.at" className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-orange-600 font-bold rounded-xl shadow-sm hover:shadow-md transition-all border border-orange-100">
+                                    📧 E-Mail senden
+                                </a>
+                                <a href="tel:+436645322221" className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-orange-600 font-bold rounded-xl shadow-sm hover:shadow-md transition-all border border-orange-100">
+                                    📞 Anrufen (+43 664 532 22 21)
+                                </a>
+                                <a href="https://wa.me/436645322221" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white font-bold rounded-xl shadow-sm hover:shadow-md transition-all hover:bg-[#20bd5a]">
+                                    💬 WhatsApp Chat
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

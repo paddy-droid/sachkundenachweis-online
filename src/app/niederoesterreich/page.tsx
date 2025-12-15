@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Niederösterreich online | Jetzt starten',
@@ -147,7 +148,24 @@ const niederoesterreichData = {
     { label: 'Zertifikat', value: 'Digitales Zertifikat direkt nach Kursende' },
     { label: 'Voraussetzung', value: 'Keine Vorkenntnisse notwendig' },
     { label: 'Trainer-Team', value: 'Zertifizierte Hundetrainer & Tierärztin' },
-  ]
+  ],
+  seoSection: (
+    <CitySeoContent
+      cityName="Niederösterreich"
+      introText="Niederösterreich bietet endlose Weiten für gemeinsame Abenteuer mit deinem Hund. Vom Waldviertel bis zu den Donau-Auen – hier gibt es viel zu entdecken."
+      subHeadline="Sicher & Kompetent unterwegs in ganz NÖ"
+      mainText="Um die Freiheit in der wunderschönen Natur Niederösterreichs genießen zu können, ist Wissen die wichtigste Voraussetzung. Das NÖ Hundehaltegesetz 2023 regelt klar die Pflichten für Hundehalter, um Konflikte mit Landwirten, Jägern und anderen Erholungssuchenden zu vermeiden. In unserem Kurs lernst du nicht nur die Paragraphen, sondern vor allem das praktische 'Gewusst-wie' für ein entspanntes Land- und Stadtleben mit deinem Hund."
+      bulletPointsTitle="Hundeland Niederösterreich"
+      bulletPoints={[
+        "NÖ Sachkundenachweis (Gesetz)",
+        "Gültig in allen 573 Gemeinden",
+        "Respektvolles Miteinander in der Natur",
+        "Vermeidung von Wild-Konflikten",
+        "Offizielles Zertifikat sofort erhalten"
+      ]}
+      closingText="Genieße die schönste Zeit mit deinem Hund – sicher und geprüft."
+    />
+  )
 };
 
 export default function NiederoesterreichPage() {

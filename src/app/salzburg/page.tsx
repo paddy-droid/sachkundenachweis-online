@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
     title: 'Sachkundenachweis Salzburg online | Kurs für Hundebesitzer',
@@ -184,7 +185,24 @@ const salzburgData = {
         { label: 'Zertifikat', value: 'Digitales Zertifikat direkt nach Kursende' },
         { label: 'Voraussetzung', value: 'Keine Vorkenntnisse notwendig' },
         { label: 'Trainer-Team', value: 'Zertifizierte Hundetrainer & Tierärztin' },
-    ]
+    ],
+    seoSection: (
+        <CitySeoContent
+            cityName="Salzburg"
+            introText="Vom Großglockner bis zur Mozartstadt – Salzburg ist ein Juwel. Damit das Zusammenleben von Mensch und Hund in diesem Naturparadies gelingt, setzt das Land Salzburg auf aufgeklärte Hundehalter."
+            subHeadline="Kompetenznachweis in Salzburg"
+            mainText="Das Salzburger Landeshundegesetz sieht vor, dass Hundehalter über das nötige Wissen verfügen müssen, um ihre Tiere artgerecht und sicher zu halten. Unser Kurs ist exakt auf diese Anforderungen abgestimmt. Wir vermitteln Ihnen nicht nur die rechtlichen Rahmenbedingungen für Salzburg und seine Gemeinden, sondern auch tiefgehendes Wissen über das Wesen des Hundes. So tragen alle dazu bei, die einzigartige Lebensqualität in Salzburg zu bewahren."
+            bulletPointsTitle="Fakten für Salzburg"
+            bulletPoints={[
+                "Anerkannt in Stadt & Land Salzburg",
+                "Erfüllt Vorgaben des Landeshundegesetzes",
+                "Schutz von Alm- und Weidevieh",
+                "Sicheres Verhalten in Tourismuszonen",
+                "Zertifikat bequem von zu Hause"
+            ]}
+            closingText="Werden Sie Teil einer verantwortungsvollen Hunde-Community in Salzburg."
+        />
+    )
 };
 
 export default function SalzburgPage() {
