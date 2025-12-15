@@ -92,10 +92,15 @@ const stPoeltenData = {
     </section>
   ),
   termine: [
-    { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "85,00 €" },
-    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "85,00 €" },
+    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 14.01.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 11.02.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 11.03.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 15.04.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 13.05.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 17.06.26", zeit: "17:30-20:30", preis: "89,00 €" },
+    { datum: "MI 15.07.26", zeit: "17:30-20:30", preis: "89,00 €" },
   ],
   buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-niederoesterreich/",
   faqItems: [
