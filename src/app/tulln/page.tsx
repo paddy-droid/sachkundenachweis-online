@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Tulln online | Jetzt starten',
@@ -122,7 +123,30 @@ const tullnData = {
     { label: 'Ort', value: 'Online (Google Meet)' },
     { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
     { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
-  ]
+  ],
+  terminIntro: (
+    <div className="custom-content" style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Tulln 2025/2026</h2>
+      <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Der Sachkundenachweis für Tulln findet online statt, sodass Sie bequem von der Gartenstadt aus teilnehmen können.</p>
+    </div>
+  ),
+  seoSection: (
+    <CitySeoContent
+      cityName="Tulln an der Donau"
+      introText="Die Gartenstadt Tulln blüht auf – und mit ihr das Leben der Hundebesitzer. Entlang der Donaulände oder im Wasserpark: Tulln bietet fantastische Möglichkeiten für Mensch und Tier."
+      subHeadline="Hundeglück in der Gartenstadt"
+      mainText="Damit die Idylle an der Donau erhalten bleibt, setzt Tulln auf verantwortungsvolle Hundehalter. Der Sachkundenachweis ist nicht nur Pflicht, sondern eine Chance. Lernen Sie, wie Sie Ihren Hund sicher durch Begegnungen auf der Donaubühne führen oder wie Sie Stresssituationen bei Veranstaltungen vermeiden. Unser Kurs vermittelt Ihnen das nötige Rüstzeug für einen entspannten Alltag in einer der schönsten Städte Niederösterreichs."
+      bulletPointsTitle="Hunde-Wissen für Tulln"
+      bulletPoints={[
+        "NÖ Sachkundenachweis (Pflicht)",
+        "Für die Anmeldung im Rathaus Tulln",
+        "Sicheres Führen an der Donaulände",
+        "Respektvoller Umgang in Grünzonen",
+        "Einfach & Online erledigen"
+      ]}
+      closingText="Sorgen Sie für ein harmonisches Miteinander in Tulln – mit Wissen und Verantwortung."
+    />
+  )
 };
 
 export default function TullnPage() {

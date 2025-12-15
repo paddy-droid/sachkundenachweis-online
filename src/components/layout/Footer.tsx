@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-10 text-center">
-        <p className="font-semibold text-lg">&copy; {new Date().getFullYear()} Sachkundenachweis Online</p>
+        <p className="font-semibold text-lg">&copy; 2026 Sachkundenachweis Online</p>
         <p className="text-sm text-gray-400 mb-6">Alle Rechte vorbehalten.</p>
         <div className="flex justify-center space-x-6 mb-6">
           <Link href="/impressum" className="hover:underline">Impressum</Link>

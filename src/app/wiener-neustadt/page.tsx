@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Wiener Neustadt online | Jetzt starten',
@@ -122,7 +123,30 @@ const wienerNeustadtData = {
     { label: 'Ort', value: 'Online (Google Meet)' },
     { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
     { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
-  ]
+  ],
+  terminIntro: (
+    <div className="custom-content" style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Wiener Neustadt 2025/2026</h2>
+      <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Unser Online-Sachkundenachweis ist perfekt für alle Hundebesitzer aus Wiener Neustadt. Jetzt Termin wählen.</p>
+    </div>
+  ),
+  seoSection: (
+    <CitySeoContent
+      cityName="Wiener Neustadt"
+      introText="Wiener Neustadt verbindet urbane Lebendigkeit mit grünen Oasen wie dem Akademiepark. Ein idealer Ort für Hunde, wenn die Regeln des Miteinanders beachtet werden."
+      subHeadline="Kompetenz für Hundehalter in der Allzeit Getreuen"
+      mainText="Der Akademiepark ist nicht nur bei Läufern beliebt, sondern auch ein Hotspot für Hundebegegnungen. Damit diese entspannt ablaufen, braucht es Wissen und Verständnis. Der Sachkundenachweis in Wiener Neustadt rüstet Sie mit allem aus, was Sie wissen müssen: Von der Leinenpflicht in bestimmten Zonen bis hin zur richtigen Deutung von Hundesignalen. Erfüllen Sie Ihre gesetzliche Pflicht und tragen Sie aktiv zu einem positiven Bild von Hunden in Ihrer Stadt bei."
+      bulletPointsTitle="Fakten für Wiener Neustadt"
+      bulletPoints={[
+        "Pflichtkurs laut NÖ Gesetz 2023",
+        "Anerkannte Bestätigung für das Magistrat",
+        "Sicheres Führen im Akademiepark",
+        "Wissen über lokale Hundezonen",
+        "100% Online & Stressfrei"
+      ]}
+      closingText="Werden Sie ein Vorbild für andere Hundehalter in Wiener Neustadt."
+    />
+  )
 };
 
 export default function WienerNeustadtPage() {

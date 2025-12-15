@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis St. Pölten online | Jetzt starten',
@@ -122,7 +123,30 @@ const stPoeltenData = {
     { label: 'Ort', value: 'Online (Google Meet)' },
     { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
     { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
-  ]
+  ],
+  terminIntro: (
+    <div className="custom-content" style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine St. Pölten 2025/2026</h2>
+      <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Der Sachkundenachweis für St. Pölten findet bequem online statt. Melden Sie sich jetzt an.</p>
+    </div>
+  ),
+  seoSection: (
+    <CitySeoContent
+      cityName="St. Pölten"
+      introText="St. Pölten, die jüngste Landeshauptstadt Österreichs, bietet mit der Traisen-Promenade und zahlreichen Parks viel Auslauf für Hunde. Umso wichtiger ist es, dass das Miteinander in der Stadt reibungslos funktioniert."
+      subHeadline="Verantwortungsvolle Hundehaltung in der Landeshauptstadt"
+      mainText="Als Hundehalter in St. Pölten tragen Sie eine besondere Verantwortung. Nicht nur gegenüber Ihrem Tier, sondern auch gegenüber Ihren Mitmenschen in der Stadt. Der Sachkundenachweis stellt sicher, dass Sie über die Leinen- und Maulkorbpflicht, die Registrierung und wichtige Verhaltensregeln bestens informiert sind. Unser Kurs bereitet Sie optimal auf den Alltag mit Hund in St. Pölten vor – vom Spaziergang am Ratzersdorfer See bis zum Bummel durch die Innenstadt."
+      bulletPointsTitle="Wichtig für St. Pölten"
+      bulletPoints={[
+        "Gesetzliche Pflicht seit 2023 (NÖ)",
+        "Unerlässlich für die Hundeanmeldung beim Magistrat",
+        "Sicheres Verhalten im städtischen Bereich",
+        "Wissen über lokale Freilaufzonen",
+        "Stressfreier Online-Kurs ohne Anfahrt"
+      ]}
+      closingText="Machen Sie den ersten Schritt zu einer vorbildlichen Hundehaltung in St. Pölten."
+    />
+  )
 };
 
 export default function StPoeltenPage() {

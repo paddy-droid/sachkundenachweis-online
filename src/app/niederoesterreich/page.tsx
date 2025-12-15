@@ -104,7 +104,7 @@ const niederoesterreichData = {
   ],
   terminIntro: (
     <div className="custom-content" style={{ padding: '20px' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Niederösterreich 2025</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Niederösterreich 2025/2026</h2>
       <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Der allgemeine niederösterreichische Sachkundenachweis dauert insgesamt 3 Stunden (1 Stunde Tierärztin, 2 Stunden Hundetrainerin) und kostet 89 Euro. Einmal im Monat findet ein Sammeltermin online statt – siehe angehängte Tabelle.</p>
       <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Online über Google Meet abgehalten</p>
     </div>

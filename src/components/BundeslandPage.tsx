@@ -29,6 +29,7 @@ interface BundeslandPageProps {
   buchungslink: string;
   faqItems: { question: string; answer: string; }[];
   hardFacts: { label: string; value: string; }[];
+  seoSection?: React.ReactNode;
 }
 
 export const BundeslandPage: React.FC<BundeslandPageProps> = ({
@@ -55,7 +56,8 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
   terminIntro,
   buchungslink,
   faqItems,
-  hardFacts
+  hardFacts,
+  seoSection
 }) => {
   return (
     <div className="bg-gray-50 text-gray-800 font-sans selection:bg-orange-100 selection:text-orange-900">
@@ -199,6 +201,8 @@ export const BundeslandPage: React.FC<BundeslandPageProps> = ({
           </section>
 
           <HardfactsTabelle items={hardFacts} />
+
+          {seoSection}
 
           <div id="termine">
             <section className="py-20">

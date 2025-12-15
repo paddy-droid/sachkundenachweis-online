@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Mödling online | Jetzt starten',
@@ -122,7 +123,30 @@ const moedlingData = {
     { label: 'Ort', value: 'Online (Google Meet)' },
     { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
     { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
-  ]
+  ],
+  terminIntro: (
+    <div className="custom-content" style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Mödling 2025/2026</h2>
+      <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Der Sachkundenachweis für Mödling findet online statt. Reservieren Sie sich jetzt Ihren Platz.</p>
+    </div>
+  ),
+  seoSection: (
+    <CitySeoContent
+      cityName="Mödling"
+      introText="Mödling ist mit seiner Nähe zum Wienerwald und den charmanten Gassen der Altstadt ein Paradies für Hundehalter. Damit das so bleibt, setzt die Stadtgemeinde auf gut informierte Hundehalter."
+      subHeadline="Sicher unterwegs im Bezirk Mödling"
+      mainText="Ob Sie mit Ihrem Vierbeiner die Föhrenberge erklimmen oder durch den Stadtpark spazieren – gegenseitige Rücksichtnahme ist der Schlüssel. Der Sachkundenachweis in Mödling vermittelt Ihnen nicht nur die gesetzlichen Grundlagen des NÖ Hundehaltegesetzes, sondern auch wertvolles Wissen über die Körpersprache Ihres Hundes. So lernen Sie, Situationen richtig einzuschätzen und Konflikte zu vermeiden, bevor sie entstehen. Ein Muss für jeden, der das Privileg genießt, in dieser wunderschönen Region einen Hund zu halten."
+      bulletPointsTitle="Hundehaltung in Mödling"
+      bulletPoints={[
+        "Gesetzlich vorgeschrieben seit Juni 2023",
+        "Anerkannt von der Stadtgemeinde Mödling",
+        "Für ein sicheres Miteinander im Wienerwald",
+        "Vermeidung von Strafen durch Unwissenheit",
+        "Flexible Online-Teilnahme am Abend"
+      ]}
+      closingText="Werden Sie zum Experten für Ihren Hund und sorgen Sie für ein entspanntes Mödling."
+    />
+  )
 };
 
 export default function MoedlingPage() {

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { BundeslandPage } from '../../components/BundeslandPage';
+import { CitySeoContent } from '../../components/CitySeoContent';
 
 export const metadata: Metadata = {
   title: 'Sachkundenachweis Baden online | Jetzt starten',
@@ -122,7 +123,30 @@ const badenData = {
     { label: 'Ort', value: 'Online (Google Meet)' },
     { label: 'Gültigkeit', value: 'Unbefristet in NÖ' },
     { label: 'Vortragende', value: 'Tierärztin & Hundetrainerin' }
-  ]
+  ],
+  terminIntro: (
+    <div className="custom-content" style={{ padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.875rem', fontWeight: 'bold' }}>Termine Baden 2025/2026</h2>
+      <p style={{ marginBottom: '20px', fontSize: '1.125rem' }}>Der Sachkundenachweis für Baden findet online statt. Sichern Sie sich jetzt Ihren Platz für die kommenden Termine.</p>
+    </div>
+  ),
+  seoSection: (
+    <CitySeoContent
+      cityName="Baden"
+      introText="Baden bei Wien ist nicht nur für seine Kurparks und das Casino bekannt, sondern auch ein wunderbarer Ort für Hundehalter. Damit das Zusammenleben in der Kaiserstadt harmonisch bleibt, ist der Sachkundenachweis der erste wichtige Schritt."
+      subHeadline="Entspanntes Miteinander in Park und Stadt"
+      mainText="Wer in Baden mit seinem Hund durch den Kurpark flaniert oder die weitläufigen Wege im Helenental erkundet, weiß: Ein gut sozialisierter Hund ist ein Segen. Der verpflichtende Sachkundenachweis in Baden (NÖ) sorgt dafür, dass alle Hundehalter dasselbe Grundverständnis für die Bedürfnisse ihrer Tiere und die gesellschaftlichen Regeln haben. Unser Kurs vermittelt dir genau das Wissen, das du für die täglichen Begegnungen in Baden brauchst – sei es beim Spaziergang entlang der Schwechat oder beim Stadtbummel."
+      bulletPointsTitle="Hundeleben in Baden"
+      bulletPoints={[
+        "Pflicht für alle Neuhundehalter seit 2023",
+        "Wichtig für die Anmeldung bei der Stadtgemeinde",
+        "Harmonisches Miteinander in Kurzonen",
+        "Grundlage für entspannte Ausflüge ins Helenental",
+        "Bequem von zu Hause aus absolvieren"
+      ]}
+      closingText="Starten Sie Ihre Reise als verantwortungsvoller Hundehalter in Baden mit uns."
+    />
+  )
 };
 
 export default function BadenPage() {
