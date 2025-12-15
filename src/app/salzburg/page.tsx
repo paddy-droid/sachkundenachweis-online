@@ -1,218 +1,192 @@
 import { Metadata } from 'next';
-import Image from "next/image";
-import Link from 'next/link';
-import { TerminTabelle } from '../../components/TerminTabelle';
-import GoogleReviews from '../../components/GoogleReviews';
+import { BundeslandPage } from '../../components/BundeslandPage';
 
 export const metadata: Metadata = {
-  title: 'Sachkundenachweis Salzburg online | Kurs für Hundebesitzer',
-  description: 'Absolviere den offiziellen Sachkundenachweis für Salzburg online. Dein Zertifikat, gesetzeskonform und flexibel von zu Hause aus.',
-  keywords: "Sachkundenachweis Salzburg, Hundekurs online, Hundeführerschein Salzburg, Gesetzlicher Nachweis Hundehaltung Salzburg",
+    title: 'Sachkundenachweis Salzburg online | Kurs für Hundebesitzer',
+    description: 'Absolviere den offiziellen Sachkundenachweis für Salzburg online. Dein Zertifikat, gesetzeskonform und flexibel von zu Hause aus.',
+    keywords: "Sachkundenachweis Salzburg, Hundekurs online, Hundeführerschein Salzburg, Gesetzlicher Nachweis Hundehaltung Salzburg",
 };
 
-const anmeldungPunkte = [
-  "Dein vollständiger Name und deine aktuelle Anschrift (Hauptwohnsitz).",
-  "Rasse, Farbe, Geschlecht und das genaue Geburtsdatum deines Hundes.",
-  "Name und Anschrift der Person oder Einrichtung, von der du den Hund übernommen hast (Züchter*in, Tierheim, Vorbesitzer*in).",
-  "Die 15-stellige Mikrochip-Nummer deines Hundes. Dieser Chip ist der Personalausweis deines Hundes und muss in der österreichischen Heimtierdatenbank registriert sein.",
-];
+// Salzburg specfic data mapped to the unified layout
+const salzburgData = {
+    pageTitle: "Sachkundenachweis Salzburg",
+    heroTitle: "Sachkundenachweis Salzburg – online",
+    heroSubtitle: "Dein offizieller Online-Kurs gemäß § 21 S.LSG. Bequem, flexibel und anerkannt.",
+    heroImage: "/hero/hero-image.webp", // Reusing hero image for internal consistency
 
-const dokumente = [
-  { title: "Dein Sachkundenachweis", text: "Die offizielle Teilnahmebestätigung dieses Online-Kurses, die belegt, dass du über das notwendige theoretische Wissen verfügst." },
-  { title: "Der Nachweis einer Haftpflichtversicherung", text: "Eine gültige Versicherungspolizze, die Personen- und Sachschäden durch deinen Hund mit einer Deckungssumme von mindestens 725.000 € abdeckt. Diese Versicherung ist für JEDEN Hund Pflicht." }
-];
+    gesetzlicheGrundlageTitle: "Anmeldung & Gesetzliche Pflicht in Salzburg",
+    gesetzlicheGrundlageText: (
+        <>
+            <h3 className="text-2xl font-bold text-[--highlight] mb-4">Der Weg zum offiziellen Hundehalter</h3>
+            <p className="text-lg mb-4">
+                Im Bundesland Salzburg ist der Nachweis der Sachkunde für Erst-Hundehalter gesetzlich vorgeschrieben (§ 21 Abs 1 S.LSG). Dieser Kurs vermittelt dir das geforderte theoretische Wissen, um einen Hund sicher und artgerecht zu halten.
+            </p>
 
-const wissensSaeulen = [
-    {
-        icon: "🧠",
-        title: "1. Wesen & Verhalten des Hundes",
-        text: "Um eine echte Partnerschaft aufzubauen, musst du die Welt aus der Perspektive deines Hundes sehen. Wir tauchen tief in die Hundepsychologie ein und beleuchten angeborene Instinkte, rassetypische Veranlagungen und das komplexe Sozialverhalten."
-    },
-    {
-        icon: "❤️",
-        title: "2. Gesundheit, Ernährung & Impfung",
-        text: "Die Gesundheit deines Vierbeiners liegt in deinen Händen. Wir geben dir einen klaren Leitfaden an die Hand: von der Auswahl des richtigen Futters bis hin zur Bedeutung der essenziellen Impfungen und der lückenlosen Prophylaxe gegen Parasiten."
-    },
-    {
-        icon: "🗣️",
-        title: "3. Hundesprache & Kommunikation",
-        text: "Dein Hund spricht ständig mit dir – nur eben ohne Worte. Wir schärfen deinen Blick für die feinen Nuancen der Körpersprache und machen dich zum „Hundeflüsterer“. Eine klare, faire Kommunikation ist das Fundament für jedes erfolgreiche Training."
-    },
-    {
-        icon: "🏡",
-        title: "4. Pflege, Bewegung & Zeitaufwand",
-        text: "Ein Hund braucht mehr als Futter und ein Dach über dem Kopf. Er braucht dich. Wir besprechen, wie du deinen Hund körperlich und geistig artgerecht auslastest und warum auch Ruhephasen entscheidend für sein Wohlbefinden sind."
-    },
-    {
-        icon: "⚖️",
-        title: "5. Der gesetzliche Rahmen in Salzburg",
-        text: "Wissen schützt vor teuren Strafen. Wir klären alle Aspekte des Tierschutzrechts und die lokalen Vorschriften in Salzburg: Wo gilt Leinenpflicht? Wann muss ein Maulkorb getragen werden? Wer die Regeln kennt, bewegt sich sicher und souverän."
-    },
-    {
-        icon: "💰",
-        title: "6. Anschaffung, Kosten & Ausstattung",
-        text: "Ein Hund ist eine Entscheidung fürs Leben – auch finanziell. Wir brechen die Kosten detailliert für dich auf, von der Erstausstattung bis zu den laufenden Ausgaben. Eine ehrliche Kostenaufstellung schützt vor bösen Überraschungen."
-    }
-];
+            <div className="bg-orange-50 p-6 rounded-xl border border-orange-100 my-6">
+                <h4 className="font-bold text-gray-800 mb-3">Erforderliche Angaben für die Gemeinde:</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Vollständiger Name & Hauptwohnsitz</li>
+                    <li>Daten des Hundes (Rasse, Chipnummer, Geburtsdatum)</li>
+                    <li>Herkunftsnachweis (Züchter, Vorbesitzer, Tierheim)</li>
+                </ul>
+            </div>
 
-const termine = [
-    { datum: "MI 24.09.25", zeit: "17:30-20:30", preis: "55,00 €" },
-    { datum: "MI 22.10.25", zeit: "17:30-20:30", preis: "55,00 €" },
-    { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "55,00 €" },
-    { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "55,00 €" },
-];
+            <p className="text-lg">
+                Zusätzlich zum Sachkundenachweis (unser Zertifikat) benötigst du für die Anmeldung eine <strong>Hundehaftpflichtversicherung</strong> mit einer Mindestdeckungssumme von 725.000 Euro. Beides zusammen bildet die Basis für eine problemlose Anmeldung auf deinem Gemeindeamt.
+            </p>
+        </>
+    ),
+    gesetzlicheGrundlageImage: "/hero/content-image-1.webp",
+
+    kursinhalteTitle: "Expertenwissen auf den Punkt gebracht",
+    kursinhalteSubtitle: "Fundiert, praxisnah und kompakt – alles, was du für den Start brauchst.",
+
+    // Mapping the "6 Pillars" into the 2 main sections for layout consistency
+    vetTeilTitle: "Veterinärmedizin & Haltung",
+    vetTeilText: "Dieser Block widmet sich der körperlichen Gesundheit deines Hundes. Unsere Tierärztin erklärt dir anschaulich, worauf es bei der Ernährung ankommt, welche Impfungen (Staupe, Parvo, Tollwut) essentiell sind und wie du Parasiten effektiv vorbeugst. Zudem besprechen wir die Grundlagen der Ersten Hilfe beim Hund und die wichtigsten Aspekte der täglichen Pflege.",
+
+    kynoTeilTitle: "Verhalten, Recht & Erziehung",
+    kynoTeilText: "Hier steigen wir tief in das Wesen des Hundes ein. Lerne die Körpersprache richtig zu deuten: Beschwichtigungssignale, Angst oder Aggression. Wir behandeln das Salzburger Landessicherheitsgesetz (Leinenpflicht, Maulkorbzwang) und geben dir wertvolle Tipps für den Alltag – von der Stubenreinheit bis zum entspannten Alleinebleiben.",
+
+    gueltigkeitTitle: "Gültigkeit in Salzburg",
+    gueltigkeitText: (
+        <>
+            <p>Dieser Kurs erfüllt die Anforderungen des Salzburger Landessicherheitsgesetzes (§ 21 Abs. 1 S.LSG) für den theoretischen Sachkundenachweis. Er richtet sich an alle Personen, die erstmals einen Hund in Salzburg halten.</p>
+            <br />
+            <p className="font-bold">Hinweis:</p>
+            <p>Da der Kurs rein theoretisch ist, kannst du ihn idealerweise schon VOR dem Einzug deines Hundes absolvieren. So hast du den Kopf frei für die Eingewöhnung.</p>
+        </>
+    ),
+    ctaButtonText: "Jetzt für den Salzburg-Kurs anmelden",
+
+    veranstalterSection: (
+        <section className="py-20 bg-gray-50 rounded-[3rem]">
+            <div className="text-center">
+                <img src="https://www.willenskraft.co.at/wp-content/uploads/2018/06/Final.-Logo-Hundeschule-Willenskraft.-Gute-Hundeschule-Graz-Gleisdorf.png" alt="Logo Hundeschule Willenskraft" className="w-48 mx-auto mb-8" />
+                <h2 className="text-4xl font-bold mb-4">Veranstalter: Hundeschule Willenskraft</h2>
+                <p className="text-xl text-gray-600 mb-12">Dein ganzheitlicher Wegbegleiter für ein harmonisches Leben mit Hund.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-16 items-center px-4 md:px-12">
+                <div className="p-6 md:p-10">
+                    <h3 className="text-3xl font-bold mb-6">Unsere Philosophie</h3>
+                    <p className="mb-4 text-lg">Wir stehen für tierschutzkonformes & modernes Hundetraining. Es geht darum, deinen Hund besser verstehen zu lernen und die richtigen Signale zu senden. Wenn du lernst die Signale deines Hundes zu lesen, ermöglicht das einen Kommunikationsfluss, der für beide eindeutig lesbar ist.</p>
+                    <p>Missverständnisse werden aufgehoben und eine dauerhafte, auf gegenseitigem Verständnis beruhende Beziehung langfristig gefestigt.</p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-105 transition-transform border border-gray-100">✅ Mobiles Training</div>
+                    <div className="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-105 transition-transform border border-gray-100">🐾 Online-Hundeschule</div>
+                    <div className="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-105 transition-transform border border-gray-100">🎓 Zert. Ausbildung</div>
+                    <div className="bg-white p-6 rounded-2xl shadow-md text-center transform hover:scale-105 transition-transform border border-gray-100">❤️ Tierschutzkonform</div>
+                </div>
+            </div>
+        </section>
+    ),
+
+    ablaufSection: (
+        <section className="py-20">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div className="p-8 order-2 md:order-1">
+                    <h2 className="text-3xl font-bold mb-6">Stressfrei zum Nachweis</h2>
+                    <p className="mb-4 text-lg">Unser Online-Kurs ist die komfortabelste Art, deine gesetzliche Pflicht zu erfüllen. Keine Parkplatzsuche, keine Anfahrt – einfach einloggen und zuhören.</p>
+                    <ul className="space-y-4">
+                        <li className="flex items-start">
+                            <span className="text-orange-500 mr-2 font-bold">✓</span>
+                            <span><strong>Interaktiver Vortrag:</strong> Stelle deine Fragen direkt an unsere Experten.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-orange-500 mr-2 font-bold">✓</span>
+                            <span><strong>Zeitsparend:</strong> Der gesamte Kurs findet an einem Abend (3 Stunden) statt.</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-orange-500 mr-2 font-bold">✓</span>
+                            <span><strong>Garantierte Durchführung:</strong> Einmal im Monat findet der Kurstermin verlässlich statt.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className="rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 order-1 md:order-2 ring-8 ring-gray-50">
+                    <img
+                        src="/hero/content-image-2.webp"
+                        alt="Entspannter Hund zu Hause"
+                        width={600}
+                        height={400}
+                        style={{ objectFit: 'cover' }}
+                    />
+                </div>
+            </div>
+        </section>
+    ),
+    podcastSection: (
+        <section className="py-20 text-center">
+            <h2 className="text-4xl font-bold mb-12">Hör dir unseren Podcast an</h2>
+            <div className="flex justify-center">
+                <iframe data-testid="embed-iframe" style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+    ),
+    termine: [
+        { datum: "MI 19.11.25", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 17.12.25", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 14.01.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 11.02.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 11.03.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 15.04.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 13.05.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 17.06.26", zeit: "17:30-20:30", preis: "59,00 €" },
+        { datum: "MI 15.07.26", zeit: "17:30-20:30", preis: "59,00 €" },
+    ],
+    terminIntro: (
+        <div className="custom-content text-center max-w-2xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-6">Termine Salzburg 2025</h2>
+            <p className="text-lg text-gray-600 mb-4">
+                Der Sachkundenachweis Salzburg kostet bei uns <strong>59 Euro</strong>.
+                Suche dir einfach den passenden Termin aus der Tabelle aus.
+            </p>
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">
+                📍 100% Online via Google Meet
+            </div>
+        </div>
+    ),
+    buchungslink: "https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/",
+    faqItems: [
+        {
+            question: "Ist dieser Sachkundenachweis in ganz Salzburg gültig?",
+            answer: "Ja, der Kurs entspricht den gesetzlichen Vorgaben des Salzburger Landessicherheitsgesetzes und wird von allen Gemeinden im Bundesland Salzburg anerkannt."
+        },
+        {
+            question: "Welche Hundehalter müssen diesen Kurs machen?",
+            answer: "Der Kurs ist für alle Personen verpflichtend, die sich einen Hund anschaffen möchten und noch keinen Nachweis über die erforderliche Sachkunde haben (Erst-Hundehalter)."
+        },
+        {
+            question: "Gibt es eine abschließende Prüfung?",
+            answer: "Nein, es ist keine Prüfung erforderlich. Die Bestätigung wird für die aktive Teilnahme an dem theoretischen Kurs ausgestellt."
+        },
+        {
+            question: "Wann bekomme ich das Zertifikat?",
+            answer: "Du erhältst deine Teilnahmebestätigung direkt nach dem Kurs per E-Mail als PDF. Diese kannst du dann zusammen mit dem Nachweis der Haftpflichtversicherung bei deiner Gemeinde vorlegen, um den Hund anzumelden."
+        },
+        {
+            question: "Kann ich den Kurs machen, bevor ich den Hund habe?",
+            answer: "Ja, das ist sogar sehr empfehlenswert! So hast du die nötigen Unterlagen schon vor dem Einzug des Hundes beisammen und kannst dich voll auf den neuen Mitbewohner konzentrieren."
+        },
+        {
+            question: "Gilt dieser Kurs für Kampfhunde / Listenhunde?",
+            answer: "Dieser Kurs vermittelt die allgemeine Sachkunde für das Halten von Hunden. Für das Halten von sogenannten 'gefährlichen Hunden' gelten in Salzburg gesonderte Bestimmungen (Wesenstest etc.). Bitte erkundige dich für diesen speziellen Fall bei deiner Gemeinde."
+        },
+        {
+            question: "Was brauche ich technisch für die Teilnahme?",
+            answer: "Einen PC, Laptop oder Tablet mit Internetverbindung und Lautsprechern. Eine Kamera und ein Mikrofon sind für die Interaktion von Vorteil."
+        }
+    ],
+    hardFacts: [
+        { label: 'Kursart', value: 'Online-Live-Kurs via Google Meet' },
+        { label: 'Dauer', value: 'ca. 2 Stunden (120 Min)' }, // Aligned with text block
+        { label: 'Gültigkeit', value: 'Salzburg-weit anerkannt' },
+        { label: 'Zertifikat', value: 'Digitales Zertifikat direkt nach Kursende' },
+        { label: 'Voraussetzung', value: 'Keine Vorkenntnisse notwendig' },
+        { label: 'Trainer-Team', value: 'Zertifizierte Hundetrainer & Tierärztin' },
+    ]
+};
 
 export default function SalzburgPage() {
-    return (
-        <main className="bg-white">
-            {/* Hero Section */}
-            <section className="bg-gray-100 py-20 px-4">
-                <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Sachkundenachweis Salzburg - online 🐾</h1>
-                        <p className="text-xl text-black mb-8">
-                            Dein offizieller Online-Kurs für ein starkes Team mit deinem Hund. Bequem, flexibel und gesetzeskonform gemäß § 21 Abs. 1 S.LSG.
-                        </p>
-                        <a href="#anmeldung" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                            Jetzt für nur 55 € starten
-                        </a>
-                    </div>
-                    <div className="text-center">
-                      <Image src="/hero/hero-image.webp" alt="Glücklicher Hund spielt auf einer Wiese" width={500} height={500} className="rounded-xl shadow-2xl" />
-                    </div>
-                </div>
-            </section>
-
-            {/* Was dich erwartet Section */}
-            <section className="py-20 px-4">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Die Säulen deines Wissens</h2>
-                    <p className="text-xl text-black mb-12 max-w-3xl mx-auto">Was dich im Detail erwartet, um perfekt auf dein Leben mit Hund vorbereitet zu sein.</p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-                        {wissensSaeulen.map((saeule) => (
-                            <div key={saeule.title} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                                <div className="text-4xl mb-4">{saeule.icon}</div>
-                                <h3 className="text-2xl font-bold mb-3 text-gray-800">{saeule.title}</h3>
-                                <p className="text-gray-800">{saeule.text}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Anmeldung bei der Gemeinde Section */}
-            <section id="anmeldung" className="py-20 px-4 bg-gray-100">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Deine Anmeldung bei der Gemeinde</h2>
-                     <p className="text-xl text-black mb-12 max-w-3xl mx-auto">Schritt für Schritt zum offiziellen Team (§ 16a S.LSG)</p>
-                    <div className="text-left max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="text-2xl font-bold mb-4 text-gray-800">Folgende Angaben sind erforderlich:</h3>
-                            <ul className="list-disc list-inside space-y-2 text-black">
-                                {anmeldungPunkte.map(punkt => <li key={punkt}>{punkt}</li>)}
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="text-2xl font-bold mb-4 text-gray-800">Diese zwei Dokumente musst du beilegen:</h3>
-                            <div className="space-y-4">
-                                {dokumente.map(doc => (
-                                    <div key={doc.title}>
-                                        <h4 className="font-bold text-gray-800">{doc.title}</h4>
-                                        <p className="text-black">{doc.text}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                     <div className="mt-12 bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 max-w-4xl mx-auto text-left rounded-r-lg">
-                        <p className="font-bold">Profi-Tipp für einen stressfreien Start:</p>
-                        <p>Da der allgemeine Sachkundenachweis rein theoretisch ist, kannst (und solltest) du ihn schon vor dem Kauf deines Hundes absolvieren. So hast du alle Unterlagen griffbereit und kannst die Anmeldung völlig entspannt und fristgerecht erledigen.</p>
-                    </div>
-                </div>
-            </section>
-            
-            {/* So läuft dein Online-Meeting ab Section */}
-            <section className="py-20 px-4">
-                <div className="container mx-auto max-w-4xl text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">So läuft dein Online-Meeting ab</h2>
-                    <div className="text-lg text-black space-y-4 text-left">
-                        <p>Dein Sachkundenachweis ist nicht nur spielend leicht zugänglich, sondern auch straff organisiert. Einmal im Monat findet unser Live-Termin statt. Nach deiner Buchung erhältst du eine E-Mail mit deinem persönlichen Google-Meet-Link.</p>
-                        <p>Am Kurstag selbst öffnen wir den virtuellen Seminarraum zehn Minuten vor Beginn, damit du deine Technik testen kannst. Der Vortrag dauert 120 Minuten und beinhaltet interaktive Abschnitte sowie eine moderierte Fragerunde. Deine Teilnahmebestätigung erhältst du direkt im Anschluss per E-Mail.</p>
-                        <p>Solltest du einmal doch nicht teilnehmen können, kannst du deinen Termin bis 24 Stunden vorher kostenlos auf einen der Folgemonate umbuchen.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 text-center">
-                <h2 className="text-4xl font-bold mb-12">Hör dir unseren Podcast an</h2>
-                <div className="flex justify-center">
-                    <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/episode/3SI0Yyc79sNiUeWTQOzluz?utm_source=generator" width="80%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </section>
-
-            <section className="py-20">
-                <TerminTabelle termine={termine} buchungslink="https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/" />
-            </section>
-
-           <section className="py-20 bg-gray-50">
-               <GoogleReviews />
-           </section>
-
-           <section className="py-20 text-center bg-gray-50 rounded-2xl">
-            <h2 className="text-4xl font-bold mb-16 text-black">Deine Expertinnen</h2>
-            <div className="flex flex-wrap justify-center gap-12">
-              <div className="text-center group">
-                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Mag.-Nicole-Nemeth-Sachkundenachweis.webp" alt="Tierärztin Mag. Nicole Nemeth für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold text-black">Mag. Nicole Nemeth</h3>
-                <p className="text-black font-semibold">Tierärztin</p>
-              </div>
-               <div className="text-center group">
-                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Jessy-Pusch-Hundeschule-Willenskraft-Sachkundenachweis.webp" alt="Hundetrainerin Jessy Pusch für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold text-black">Jessy Pusch</h3>
-                <p className="text-black font-semibold">Hundetrainerin</p>
-              </div>
-              <div className="text-center group">
-                <Image src="https://www.willenskraft.co.at/wp-content/uploads/2025/02/Bianca-Oriana-Willen-Sachkundenachweis.webp" alt="Hundetrainerin Bianca Oriana Willen für den Sachkundenachweis" width={200} height={200} className="rounded-full object-cover mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"/>
-                <h3 className="mt-6 text-2xl font-bold text-black">Bianca Oriana Willen</h3>
-                <p className="text-black font-semibold">Hundetrainerin</p>
-              </div>
-            </div>
-          </section>
-
-            <section className="py-20 bg-gray-50 rounded-2xl">
-      <div className="text-center">
-        <img src="https://www.willenskraft.co.at/wp-content/uploads/2018/06/Final.-Logo-Hundeschule-Willenskraft.-Gute-Hundeschule-Graz-Gleisdorf.png" alt="Logo Hundeschule Willenskraft" className="w-48 mx-auto mb-8" />
-        <h2 className="text-4xl font-bold mb-4 text-black">Veranstalter: Hundeschule Willenskraft</h2>
-        <p className="text-xl text-black mb-12">Dein ganzheitlicher Wegbegleiter für ein harmonisches Leben mit Hund.</p>
-      </div>
-      <div className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="p-10">
-          <h3 className="text-3xl font-bold mb-6 text-black">Unsere Philosophie</h3>
-          <p className="mb-4 text-lg text-black">Wir stehen für tierschutzkonformes & modernes Hundetraining. Es geht darum, deinen Hund besser verstehen zu lernen und die richtigen Signale zu senden. Wenn du lernst die Signale deines Hundes zu lesen, ermöglicht das einen Kommunikationsfluss der für beide eindeutig lesbar ist.</p>
-          <p className="text-black">Missverständnisse werden aufgehoben und eine dauerhafte, auf gegenseitigem Verständnis beruhende Beziehung langfristig gefestigt.</p>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">✅ Mobiles Training</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">🐾 Online-Hundeschule</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">🎓 Zert. Ausbildung</div>
-          <div className="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition-transform text-black">❤️ Tierschutzkonform</div>
-        </div>
-      </div>
-    </section>
-
-             {/* CTA Section */}
-            <section className="py-20 px-4 bg-white">
-                <div className="container mx-auto text-center">
-                   <img src="https://www.willenskraft.co.at/wp-content/uploads/2018/06/Final.-Logo-Hundeschule-Willenskraft.-Gute-Hundeschule-Graz-Gleisdorf.png" alt="Logo Hundeschule Willenskraft" className="w-48 mx-auto mb-8" />
-                   <h2 className="text-4xl font-bold mb-4 text-gray-900">Dein Weg zum Traum-Team beginnt genau hier!</h2>
-                   <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-700">
-                       Investiere in das Wissen, das dir und deinem Hund Sicherheit und tiefes Vertrauen schenkt. Sichere dir deinen Platz flexibel und bequem von zu Hause aus.
-                    </p>
-                    <a href="https://www.willenskraft.co.at/produkt/sachkundenachweis-salzburg/" target="_blank" rel="noopener noreferrer" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                        Jetzt Kurs für 55 € buchen
-                    </a>
-                </div>
-            </section>
-        </main>
-    );
+    return <BundeslandPage {...salzburgData} />;
 }
